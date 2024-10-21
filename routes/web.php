@@ -6,6 +6,10 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/admin', 'AdminController@index');
+}); 
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

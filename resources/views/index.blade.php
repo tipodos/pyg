@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Solar - Solar Energy Website Template</title>
+    <title>P&G</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -30,17 +30,17 @@
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-1 py-lg-0 px-lg-5">
         <a href="index.html" class="navbar-brand d-block d-lg-none">
-            <h1 class="display-4 text-white text-uppercase m-0">Solar</h1>
+            <h1 class="display-4 text-white text-uppercase m-0">P&G</h1>
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
             <div class="navbar-nav ml-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#service" class="nav-item nav-link">Service</a>
-                <a href="#project" class="nav-item nav-link">Project</a>
+                <a href="#home" class="nav-item nav-link active">Inicio</a>
+                <a href="#about" class="nav-item nav-link">Nosotros</a>
+                <a href="#service" class="nav-item nav-link">Servicios</a>
+                <a href="#project" class="nav-item nav-link">Proyectos</a>
             </div>
             <a href="index.html" class="navbar-brand bg-primary px-4 mx-3 d-none d-lg-block">
                 <h1 class="display-4 text-white text-uppercase m-0">Solar</h1>
@@ -49,7 +49,7 @@
                 <a href="#team" class="nav-item nav-link">Team</a>
                 <a href="#faqs" class="nav-item nav-link">FAQs</a>
                 <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
+                <a href="#contact" class="nav-item nav-link">Contactos</a>
             </div>
         </div>
     </nav>
@@ -64,9 +64,9 @@
                     <img class="position-absolute w-100 h-100" src="img/carousel-1.jpg" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Solar Energy</h4>
-                            <h3 class="display-2 font-secondary text-white mb-4">Innovative Solar Solution For Home</h3>
-                            <a class="btn btn-light font-weight-bold py-3 px-5 mt-2 btn-scroll" href="#contact">Get A Quote</a>
+                            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">P&G</h4>
+                            <h3 class="display-2 font-secondary text-white mb-4">Servicio de montajes e instalaciones de gas a nivel doméstico e industrial</h3>
+                            <a class="btn btn-light font-weight-bold py-3 px-5 mt-2 btn-scroll" href="#contact">Evianos tus consultas</a>
                         </div>
                     </div>
                 </div>
@@ -74,9 +74,9 @@
                     <img class="position-absolute w-100 h-100" src="img/carousel-2.jpg" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Solar Energy</h4>
-                            <h3 class="display-2 font-secondary text-white mb-4">Let The Sun Work For Your Home</h3>
-                            <a class="btn btn-light font-weight-bold py-3 px-5 mt-2 btn-scroll" href="#contact">Get A Quote</a>
+                            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">P&G</h4>
+                            <h3 class="display-2 font-secondary text-white mb-4">Servicio de montajes e instalaciones de gas a nivel doméstico e industrial</h3>
+                            <a class="btn btn-light font-weight-bold py-3 px-5 mt-2 btn-scroll" href="#contact">Evianos tus consultas</a>
                         </div>
                     </div>
                 </div>
@@ -104,9 +104,9 @@
                     <img class="img-fluid mb-4 mb-lg-0" src="{{asset('img/about.jpg')}}" alt="">
                 </div>
                 <div class="col-lg-7">
-                    <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">About Us</h6>
-                    <h1 class="display-4 mb-3"><span class="text-primary">25+ Years Experience</span> In Solar Power Industry</h1>
-                    <p>At sed est eirmod sanctus et amet diam magna. Dolore clita magna sed sed stet et, at magna rebum eirmod sanctus ut sed, stet tempor dolore rebum sit duo, dolore tempor sit est sit sanctus, sit justo sit invidunt clita ut justo diam magna. Erat eos nonumy labore dolor. Dolore kasd no et et et elitr. Erat sea dolor elitr diam sed lorem rebum et vero. </p>
+                    <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Nosotros</h6>
+                    <h1 class="display-4 mb-3"><span class="text-primary">Más de 25 años de experiencia</span> en la instalación de gas a nivel industrial</h1>
+                    <p>Durante más de dos décadas, hemos brindado soluciones de instalación de sistemas de gas industrial, garantizando seguridad, eficiencia y cumplimiento con los más altos estándares de la industria. Nos especializamos en proyectos a gran escala, abarcando desde plantas de producción hasta complejos industriales, asegurando que cada instalación sea ejecutada con precisión y profesionalismo. Nuestro equipo de expertos está comprometido con la innovación y la satisfacción del cliente, siempre utilizando tecnologías de vanguardia y prácticas seguras.</p>
                     <a class="btn btn-primary font-weight-bold py-3 px-5 mt-2" type="button" data-toggle="modal" data-target="#exampleModalLong">Read More</a>
                 </div>
             </div>
@@ -119,11 +119,11 @@
     <div class="container-fluid py-5" id="service">
         <div class="container py-5">
             <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Services</h6>
-                <h1 class="font-secondary display-4">What We Cover</h1>
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Servicios</h6>
+                <h1 class="font-secondary display-4">¿Qué ofrecemos?</h1>
             </div>
             <div class="row">
-                <div class="col-lg-4 mb-3">
+                <div class="col-lg-3 mb-3">
                     <div class="product-item mb-2">
                         <div class="product-img">
                             <img class="img-fluid" src="{{asset('img/product-1.jpg')}}" alt="">
@@ -132,11 +132,11 @@
                             </a>
                         </div>
                         <div class="bg-secondary text-center p-4">
-                            <h3 class="m-0">Solar System</h3>
+                            <h3 class="m-0">Diseño y Planificación</h3>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-3">
+                <div class="col-lg-3 mb-3">
                     <div class="product-item mb-2">
                         <div class="product-img">
                             <img class="img-fluid" src="{{asset('img/product-2.jpg')}}" alt="">
@@ -145,11 +145,11 @@
                             </a>
                         </div>
                         <div class="bg-secondary text-center p-4">
-                            <h3 class="m-0">Wind Turbine</h3>
+                            <h3 class="m-0">Instalación de Sistemas</h3>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-3">
+                <div class="col-lg-3 mb-3">
                     <div class="product-item mb-2">
                         <div class="product-img">
                             <img class="img-fluid" src="{{asset('img/product-3.jpg')}}" alt="">
@@ -158,21 +158,34 @@
                             </a>
                         </div>
                         <div class="bg-secondary text-center p-4">
-                            <h3 class="m-0">Wind Generator</h3>
+                            <h3 class="m-0">Mantenimiento Preventivo y Correctivo</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="product-item mb-2">
+                        <div class="product-img">
+                            <img class="img-fluid" src="{{asset('img/product-3.jpg')}}" alt="">
+                            <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                                <i class="fa fa-2x fa-plus text-white"></i>
+                            </a>
+                        </div>
+                        <div class="bg-secondary text-center p-4">
+                            <h3 class="m-0">Soluciones Innovadoras</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Service End -->
+    <!-- termina servicios -->
 
 
-    <!-- Gallery Start -->
+    <!-- comienza galeria -->
     <div class="container-fluid bg-gallery" id="project" style="padding: 120px 0; margin: 90px 0;">
         <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
-            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Project</h6>
-            <h1 class="font-secondary display-4 text-white">Project Photo Gallery</h1>
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Proyectos</h6>
+            <h1 class="font-secondary display-4 text-white">Galeria de fotos de proyectos</h1>
         </div>
         <div class="owl-carousel gallery-carousel">
             <div class="gallery-item">
@@ -213,7 +226,7 @@
             </div>
         </div>
     </div>
-    <!-- Gallery End -->
+    <!-- Termina galeria -->
 
 
     <!-- Team Start -->
@@ -358,13 +371,13 @@
                 <div class="col-lg-8">
                     <div class="owl-carousel testimonial-carousel">
                         <div class="text-center">
-                            <img class="img-fluid mx-auto mb-3" src="{{aseet('img/testimonial-1.jpg')}}" style="width: 100px;">
+                            <img class="img-fluid mx-auto mb-3" src="{{asset('img/testimonial-1.jpg')}}" style="width: 100px;">
                             <p style="font-size: 22px;">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
                             <h4>Client Name</h4>
                             <span>Profession</span>
                         </div>
                         <div class="text-center">
-                            <img class="img-fluid mx-auto mb-3" src="{{aseet('img/testimonial-2.jpg')}}" style="width: 100px;">
+                            <img class="img-fluid mx-auto mb-3" src="{{asset('img/testimonial-2.jpg')}}" style="width: 100px;">
                             <p style="font-size: 22px;">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
                             <h4>Client Name</h4>
                             <span>Profession</span>
