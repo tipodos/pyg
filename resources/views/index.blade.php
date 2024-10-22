@@ -245,7 +245,7 @@
                                 <p class="text-muted font-italic mb-2">CEO & Founder</p>
                                 <p>Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem</p>
                                 <div class="position-relative mb-2">
-                                    <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-primary btn-square mr-1" href="https://www.youtube.com/watch?v=RFKAl6ngWdU"><i class="fab fa-twitter"></i></a>
                                     <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a>
                                 </div>
