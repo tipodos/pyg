@@ -101,6 +101,7 @@
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-5">
+
                     <img class="img-fluid mb-4 mb-lg-0" src="{{asset('img/imagen1.jpg')}}" alt="">
                 </div>
                 <div class="col-lg-7">
@@ -463,7 +464,7 @@
                         <p>EDIFIGAS se enfoca en brindar un servicio de excelencia en el sector de la construcción, con un equipo altamente capacitado. 
                             La empresa mantiene altos estándares de calidad e integridad, ofreciendo maquinaria de alta calidad en óptimas condiciones, 
                             con mantenimiento especializado y a precios competitivos en el mercado peruano.</p>
-                        <div class="d-flex justify-content-start mt-4">
+                            <div class="d-flex justify-content-start mt-4">
                             <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
