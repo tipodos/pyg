@@ -43,7 +43,7 @@
                 <a href="#project" class="nav-item nav-link">Proyectos</a>
             </div>
             <a href="index.html" class="navbar-brand bg-primary px-4 mx-3 d-none d-lg-block">
-                <h1 class="display-4 text-white text-uppercase m-0">Solar</h1>
+                <h1 class="display-4 text-white text-uppercase m-0">G A S</h1>
             </a>
             <div class="navbar-nav mr-auto py-0">
                 <a href="#team" class="nav-item nav-link">Team</a>
@@ -101,13 +101,14 @@
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-5">
-                    <img class="img-fluid mb-4 mb-lg-0" src="{{asset('img/about.jpg')}}" alt="">
+
+                    <img class="img-fluid mb-4 mb-lg-0" src="{{asset('img/imagen1.jpg')}}" alt="">
                 </div>
                 <div class="col-lg-7">
                     <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Nosotros</h6>
                     <h1 class="display-4 mb-3"><span class="text-primary">Más de 25 años de experiencia</span> en la instalación de gas a nivel industrial</h1>
                     <p>Durante más de dos décadas, hemos brindado soluciones de instalación de sistemas de gas industrial, garantizando seguridad, eficiencia y cumplimiento con los más altos estándares de la industria. Nos especializamos en proyectos a gran escala, abarcando desde plantas de producción hasta complejos industriales, asegurando que cada instalación sea ejecutada con precisión y profesionalismo. Nuestro equipo de expertos está comprometido con la innovación y la satisfacción del cliente, siempre utilizando tecnologías de vanguardia y prácticas seguras.</p>
-                    <a class="btn btn-primary font-weight-bold py-3 px-5 mt-2" type="button" data-toggle="modal" data-target="#exampleModalLong">Read More</a>
+                    <a class="btn btn-primary font-weight-bold py-3 px-5 mt-2" type="button" data-toggle="modal" data-target="#exampleModalLong">Leer Mas</a>
                 </div>
             </div>
         </div>
@@ -126,33 +127,33 @@
                 <div class="col-lg-3 mb-3">
                     <div class="product-item mb-2">
                         <div class="product-img">
-                            <img class="img-fluid" src="{{asset('img/product-1.jpg')}}" alt="">
+                            <img class="img-fluid" src="{{asset('img/imagen2.jpeg')}}" alt="">
                             <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
                                 <i class="fa fa-2x fa-plus text-white"></i>
                             </a>
                         </div>
                         <div class="bg-secondary text-center p-4">
-                            <h3 class="m-0">Diseño y Planificación</h3>
+                            <h3 class="m-0">Instalaciones de gas domestico</h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 mb-3">
                     <div class="product-item mb-2">
                         <div class="product-img">
-                            <img class="img-fluid" src="{{asset('img/product-2.jpg')}}" alt="">
+                            <img class="img-fluid" src="{{asset('img/imagen2.jpeg')}}" alt="">
                             <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
                                 <i class="fa fa-2x fa-plus text-white"></i>
                             </a>
                         </div>
                         <div class="bg-secondary text-center p-4">
-                            <h3 class="m-0">Instalación de Sistemas</h3>
+                            <h3 class="m-0">Mantenimiento de Tuberias de Gas </h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 mb-3">
                     <div class="product-item mb-2">
                         <div class="product-img">
-                            <img class="img-fluid" src="{{asset('img/product-3.jpg')}}" alt="">
+                            <img class="img-fluid" src="{{asset('img/imagen2.jpeg')}}" alt="">
                             <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
                                 <i class="fa fa-2x fa-plus text-white"></i>
                             </a>
@@ -165,7 +166,7 @@
                 <div class="col-lg-3 mb-3">
                     <div class="product-item mb-2">
                         <div class="product-img">
-                            <img class="img-fluid" src="{{asset('img/product-3.jpg')}}" alt="">
+                            <img class="img-fluid" src="{{asset('img/imagen2.jpeg')}}" alt="">
                             <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
                                 <i class="fa fa-2x fa-plus text-white"></i>
                             </a>
@@ -233,8 +234,8 @@
     <div class="container-fluid py-5" id="team">
         <div class="container py-5">
             <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Team</h6>
-                <h1 class="font-secondary display-4">Meet The Team</h1>
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Equipo</h6>
+                <h1 class="font-secondary display-4">GRUPO DE TRABAJO</h1>
             </div>
             <div class="row justify-content-lg-start m-0 mb-4 pb-2 mb-sm-0 pb-sm-0">
                 <div class="col-lg-6 p-0">
@@ -245,7 +246,7 @@
                                 <p class="text-muted font-italic mb-2">CEO & Founder</p>
                                 <p>Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem</p>
                                 <div class="position-relative mb-2">
-                                    <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-primary btn-square mr-1" href=""><i class="fab fa-twitter"></i></a>
                                     <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a>
                                 </div>
@@ -330,29 +331,29 @@
         <div class="container py-5">
             <div class="section-title position-relative text-center">
                 <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">FAQs</h6>
-                <h1 class="display-4">You Should Know</h1>
+                <h1 class="display-4">DEBERIAS DE SABERLO</h1>
             </div>
             <div class="row">
                 <div class="col-md-6 border-right border-primary">
                     <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
-                        <h3 class="mb-4">Why Switch to Solar?</h3>
-                        <h5 class="mb-3"><i class="fa fa-check text-success float-md-right mr-2 mr-md-0 ml-md-2"></i>Vero dolor amet no eos ipsum erat</h5>
-                        <h5 class="mb-3"><i class="fa fa-check text-success float-md-right mr-2 mr-md-0 ml-md-2"></i>Lorem tempor tempor gubergren dolor dolor dolor</h5>
-                        <h5 class="mb-3"><i class="fa fa-check text-success float-md-right mr-2 mr-md-0 ml-md-2"></i>Nonumy tempor dolores sadipscing duo</h5>
-                        <h5 class="mb-0"><i class="fa fa-check text-success float-md-right mr-2 mr-md-0 ml-md-2"></i>Kasd dolor ea dolores ut nonumy</h5>
+                        <h3 class="mb-4">¿Por que usar gas natural?</h3>
+                        <h5 class="mb-3"><i class="fa fa-check text-success float-md-right mr-2 mr-md-0 ml-md-2"></i>Eficiencia Energetica</h5>
+                        <h5 class="mb-3"><i class="fa fa-check text-success float-md-right mr-2 mr-md-0 ml-md-2"></i>Reduccion de emisiones contaminantes</h5>
+                        <h5 class="mb-3"><i class="fa fa-check text-success float-md-right mr-2 mr-md-0 ml-md-2"></i>costo economico</h5>
+                        <h5 class="mb-0"><i class="fa fa-check text-success float-md-right mr-2 mr-md-0 ml-md-2"></i>Seguridad y confiablidad</h5>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="text-center text-md-left ml-md-3">
-                        <h3 class="mb-4">Why Choose Us?</h3>
-                        <h5 class="mb-3"><i class="fa fa-check text-success mr-2"></i>Vero dolor amet no eos ipsum erat</h5>
-                        <h5 class="mb-3"><i class="fa fa-check text-success mr-2"></i>Lorem tempor tempor gubergren dolor dolor dolor</h5>
-                        <h5 class="mb-3"><i class="fa fa-check text-success mr-2"></i>Nonumy tempor dolores sadipscing duo</h5>
-                        <h5 class="mb-0"><i class="fa fa-check text-success mr-2"></i>Kasd dolor ea dolores ut nonumy</h5>
+                        <h3 class="mb-4">¿Por que elegirnos?</h3>
+                        <h5 class="mb-3"><i class="fa fa-check text-success mr-2"></i>Experiencia y especializacion</h5>
+                        <h5 class="mb-3"><i class="fa fa-check text-success mr-2"></i>Calidad y seguridad</h5>
+                        <h5 class="mb-3"><i class="fa fa-check text-success mr-2"></i>Servicio personalizado y atencion al cliente</h5>
+                        <h5 class="mb-0"><i class="fa fa-check text-success mr-2"></i>Precios competitivos y garantia</h5>
                     </div>
                 </div>
                 <div class="col-md-12 text-center pt-3">
-                    <a class="btn btn-primary font-weight-bold py-3 px-5 mt-4 btn-scroll" href="#contact">Get A Quote</a>
+                    <a class="btn btn-primary font-weight-bold py-3 px-5 mt-4 btn-scroll" href="#contact">Obtener cotizacion</a>
                 </div>
             </div>
         </div>
@@ -394,8 +395,8 @@
     <div class="container-fluid py-5" id="contact">
         <div class="container py-5">
             <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Contact</h6>
-                <h1 class="font-secondary display-4">Get In Touch</h1>
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Contactos</h6>
+                <h1 class="font-secondary display-4">Contactenos</h1>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -404,11 +405,11 @@
                         <form name="sentMessage" id="contactForm" novalidate="novalidate">
                             <div class="form-row">
                                 <div class="col-sm-6 control-group">
-                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3" id="name" placeholder="Tu Nombre" required="required" data-validation-required-message="Please enter your name" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="col-sm-6 control-group">
-                                    <input type="email" class="form-control bg-secondary border-0 py-4 px-3" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                    <input type="email" class="form-control bg-secondary border-0 py-4 px-3" id="email" placeholder="Tu Correo" required="required" data-validation-required-message="Please enter your email" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -417,11 +418,11 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="6" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="6" id="message" placeholder="Mensaje" required="required" data-validation-required-message="Please enter your message"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="text-center">
-                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit" id="sendMessageButton">Send Message</button>
+                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit" id="sendMessageButton">Enviar Mensaje</button>
                             </div>
                         </form>
                     </div>
@@ -439,20 +440,20 @@
                 <div class="row mb-5 p-4" style="background: rgba(256, 256, 256, .05);">
                     <div class="col-md-4">
                         <div class="text-md-center">
-                            <h5 class="text-primary text-uppercase mb-2" style="letter-spacing: 5px;">Our Office</h5>
-                            <p class="mb-4 m-md-0">123 Street, New York, USA</p>
+                            <h5 class="text-primary text-uppercase mb-2" style="letter-spacing: 5px;">Nuestra Oficina</h5>
+                            <p class="mb-4 m-md-0">El Tambo</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="text-md-center">
-                            <h5 class="text-primary text-uppercase mb-2" style="letter-spacing: 5px;">Email Us</h5>
-                            <p class="mb-4 m-md-0">info@example.com</p>
+                            <h5 class="text-primary text-uppercase mb-2" style="letter-spacing: 5px;">email</h5>
+                            <p class="mb-4 m-md-0">gherrera@gypingenieros.com</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="text-md-center">
-                            <h5 class="text-primary text-uppercase mb-2" style="letter-spacing: 5px;">Call Us</h5>
-                            <p class="m-0">+012 345 6789</p>
+                            <h5 class="text-primary text-uppercase mb-2" style="letter-spacing: 5px;">Celular</h5>
+                            <p class="m-0">+51 954 625 212</p>
                         </div>
                     </div>
                 </div>
@@ -460,8 +461,10 @@
             <div class="col-lg-7 col-md-12">
                 <div class="row">
                     <div class="col-md-6 mb-5">
-                        <p>Et et amet ut elitr ipsum sit dolor dolor dolore. Sit accusam elitr ut diam sit rebum. Eirmod duo kasd diam vero labore sea, est et et lorem ut at erat, gubergren ipsum et ipsum elitr et rebum rebum</p>
-                        <div class="d-flex justify-content-start mt-4">
+                        <p>EDIFIGAS se enfoca en brindar un servicio de excelencia en el sector de la construcción, con un equipo altamente capacitado. 
+                            La empresa mantiene altos estándares de calidad e integridad, ofreciendo maquinaria de alta calidad en óptimas condiciones, 
+                            con mantenimiento especializado y a precios competitivos en el mercado peruano.</p>
+                            <div class="d-flex justify-content-start mt-4">
                             <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -469,7 +472,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 mb-5">
-                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Our Products</h5>
+                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Nuestros Servicios</h5>
                         <div class="d-flex flex-column justify-content-start">
                             <a class="text-white btn-scroll mb-2" href="#service"><i class="fa fa-angle-right mr-2"></i>Solar System</a>
                             <a class="text-white btn-scroll mb-2" href="#service"><i class="fa fa-angle-right mr-2"></i>Wind Turbine</a>
@@ -506,15 +509,15 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Solar Energy System</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle">Instalaciones de gas domestico</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <img class="img-fluid mb-4" src="img/carousel-1.jpg" alt="">
-                    <p>Sit eos diam rebum amet stet sit lorem invidunt, kasd dolor ea dolores ut nonumy, sea est rebum dolore dolor. Lorem tempor tempor gubergren dolor dolor dolor. Kasd amet labore voluptua justo diam, dolore accusam duo est stet nonumy tempor dolores sadipscing duo. Stet at et nonumy erat et sed.</p>
-                    <p>Sit eos diam rebum amet stet sit lorem invidunt, kasd dolor ea dolores ut nonumy, sea est rebum dolore dolor. Lorem tempor tempor gubergren dolor dolor dolor. Kasd amet labore voluptua justo diam, dolore accusam duo est stet nonumy tempor dolores sadipscing duo. Stet at et nonumy erat et sed.</p>
+                    <p>- Utilizamos nuevas tendencias en instalaciones de redes, a través de nuestro departamento de ingeniería brindamos asesoría integral, diseñamos, instalamos y asesoramos en la ejecución de proyectos en residencias, viviendas, condominios, edificaciones, departamentos, penthouse, casas de playa, casa de campo.</p>
+                    <p>- Instalaciones limpias y seguras, energía para cocción, calefacción y agua caliente sanitaria y sus conexiones a los aparatos a gas, cocinas, encimeras, termas, termotanques, calentadores de paso, termas y calentadores de gran volumen, secadoras, calefacción modular, calderas de condensación, climatización, calentadores de piscina.</p>
                     <p>Sit eos diam rebum amet stet sit lorem invidunt, kasd dolor ea dolores ut nonumy, sea est rebum dolore dolor. Lorem tempor tempor gubergren dolor dolor dolor. Kasd amet labore voluptua justo diam, dolore accusam duo est stet nonumy tempor dolores sadipscing duo. Stet at et nonumy erat et sed.</p>
                     <p>Sit eos diam rebum amet stet sit lorem invidunt, kasd dolor ea dolores ut nonumy, sea est rebum dolore dolor. Lorem tempor tempor gubergren dolor dolor dolor. Kasd amet labore voluptua justo diam, dolore accusam duo est stet nonumy tempor dolores sadipscing duo. Stet at et nonumy erat et sed.</p>
                     <p>Sit eos diam rebum amet stet sit lorem invidunt, kasd dolor ea dolores ut nonumy, sea est rebum dolore dolor. Lorem tempor tempor gubergren dolor dolor dolor. Kasd amet labore voluptua justo diam, dolore accusam duo est stet nonumy tempor dolores sadipscing duo. Stet at et nonumy erat et sed.</p>
