@@ -8,17 +8,18 @@
 
 @section('content')
 <div class="form-container">
-    <h2>Crear Nueva Categoría</h2>
-    <form action="{{ route('imagen.store') }}" method="POST" enctype="multipart/form-data">
+    <h2>Editar Imagen</h2>
+    <form action="{{ route('imagen.update',['id'=>$imagen->id]) }}" method="POST" enctype="multipart/form-data">
         @csrf
+        @method('put')
         <label for="nombre">Nombre de la Imagen</label>
-        <input type="text" name="nombre" id="nombre" placeholder="Escribe el nombre de la Imagen" required>
+        <input type="text" name="nombre" id="nombre" placeholder="Escribe el nombre de la Imagen" value="{{$imagen->nombre}}" required>
 
         <label for="categoria">Categoria</label>
         <select name="categoria_id" id="categoria" required>
             <option selected disabled>Selecciona una categoría</option>
             @foreach ($categoria as $cate)
-                <option value="{{ $cate->id }}">{{$cate->nombre}}</option>
+            <option value="{{ $cate->id }}" {{ $imagen->categoria_id == $cate->id ? 'selected' : '' }}>{{ $cate->nombre }}</option>
             @endforeach
         </select>
         <div class="form-group">
@@ -44,16 +45,16 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($imagen as $image)
+            @foreach ($img as $imgs)
                 <tr>
-                    <td>{{ $image->id }}</td>
-                    <td>{{ $image->nombre }}</td>
-                    <td>{{ $image->categoria->nombre }}</td>
-                    <td><img src="{{asset('img/'.$image->img)}} " alt="" width="70px"></td>
+                    <td>{{ $imgs->id }}</td>
+                    <td>{{ $imgs->nombre }}</td>
+                    <td>{{ $imgs->categoria->nombre }}</td>
+                    <td><img src="{{asset('img/'.$imgs->img)}} " alt="" width="70px"></td>
                     <td>
-                        <a href="{{ route('imagen.edit', ['id' => $image->id]) }}" class="btn btn-warning btn-sm">Editar</a>
+                        <a href="{{ route('imagen.edit', ['id' => $imgs->id]) }}" class="btn btn-warning btn-sm">Editar</a>
 
-                        <form action="{{ route('imagen.destroy', ['id' => $image->id]) }}" method="POST" style="display:inline;">
+                        <form action="{{ route('imagen.destroy', ['id' => $imgs->id]) }}" method="POST" style="display:inline;">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('¿Estás seguro de que deseas eliminar esta categoría?')">Eliminar</button>

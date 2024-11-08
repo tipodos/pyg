@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\categoria_img;
+use App\Models\image;
 use Illuminate\Http\Request;
 
 class imagenController extends Controller
@@ -11,54 +13,67 @@ class imagenController extends Controller
      */
     public function index()
     {
-        return view('imagen/index');
+        $imagen = image::all();
+        $categoria =categoria_img::all();
+        return view('imagen/index',compact('imagen','categoria'));
     }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
-        //
-    }
+        $request->validate([
+            'nombre' => 'required|string|max:255',
+            'categoria_id' => 'required|exists:categoria_imgs,id',
+            'img' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+        ]);
 
-    /**
-     * Display the specified resource.
-     */
+        // Guardar la imagen en el directorio 'public/img'
+        $imageName = time() . '.' . $request->img->extension();
+        $request->img->move(public_path('img'), $imageName);
+
+        // Crear el registro en la base de datos
+        $imagen = new Image();
+        $imagen->nombre = $request->nombre;
+        $imagen->categoria_id = $request->categoria_id;
+        $imagen->img = $imageName;
+        $imagen->save();
+
+        return redirect()->back()->with('success', 'Imagen subida exitosamente');
+    }
     public function show(string $id)
     {
         //
     }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
     public function edit(string $id)
     {
-        //
+        $imagen = image::find($id);
+        $img = image::all();
+        $categoria =categoria_img::all();
+        return view('imagen/edit',compact('imagen','categoria','img'));
     }
-
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(Request $request, string $id)
     {
-        //
-    }
+        $request->validate([
+            'nombre' => 'required|string|max:255',
+            'categoria_id' => 'required|exists:categoria_imgs,id',
+            'img' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+        ]);
 
-    /**
-     * Remove the specified resource from storage.
-     */
+        // Guardar la imagen en el directorio 'public/img'
+        $imageName = time() . '.' . $request->img->extension();
+        $request->img->move(public_path('img'), $imageName);
+
+        // Crear el registro en la base de datos
+        $imagen = image::find($id);
+        $imagen->nombre = $request->nombre;
+        $imagen->categoria_id = $request->categoria_id;
+        $imagen->img = $imageName;
+        $imagen->save();
+
+        return redirect()->route('imagen.index')->with('success', 'Imagen subida exitosamente');
+    }
     public function destroy(string $id)
     {
-        //
+        $imagen = image::find($id);
+        $imagen->delete();
+        return redirect()->back();
     }
 }

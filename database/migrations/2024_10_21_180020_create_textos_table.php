@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('textos', function (Blueprint $table) {
             $table->id();
             $table->string('campo');
+            $table->string('titulo');
             $table->text('texto');
             $table->timestamps();
         });

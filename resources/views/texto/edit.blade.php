@@ -8,18 +8,19 @@
 
 @section('content')
 <div class="form-container">
-    <h2>Crear Nuevo Texto</h2>
-    <form action="{{ route('texto.store') }}" method="POST">
+    <h2>Actualizar Texto</h2>
+    <form action="{{ route('texto.update',['id'=>$texto->id]) }}" method="POST">
         @csrf
+        @method('PUT')
         <label for="campo">Nombre del campo</label>
-        <input type="text" name="campo" id="campo" placeholder="Escribe el nombre de la categoría" required>
+        <input type="text" name="campo" id="campo" placeholder="Escribe el nombre de la categoría" value="{{$texto->campo}}" required>
 
-        <label for="campo">Titulo</label>
-        <input type="text" name="titulo" id="titulo" placeholder="Escribe el titulo del texto" required>
+        <label for="campo">Nombre del titulo</label>
+        <input type="text" name="titulo" id="titulo" placeholder="Escribe el titulo del texto" value="{{$texto->titulo}}" required>
 
         <label for="texto">Nombre del texto</label>
-        <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
-        <input type="submit" value="Enviar">
+        <textarea name="texto" id="texto" cols="30" rows="10">{{$texto->texto}}</textarea>
+        <input type="submit" value="Actualizar">
     </form>
 </div>
 <!-- Tabla para mostrar categorías -->
@@ -29,14 +30,14 @@
             <tr>
                 <th>ID</th>
                 <th>Campo</th>
-                <th>titulo</th>
                 <th>Texto</th>
+                <th>titulo</th>
                 <th>Fecha de Creación</th>
                 <th>acción</th>
             </tr>
         </thead>
         <tbody>
-            @foreach ($texto as $txt)
+            @foreach ($textos as $txt)
                 <tr>
                     <td>{{ $txt->id }}</td>
                     <td>{{ $txt->campo }}</td>
@@ -44,9 +45,9 @@
                     <td>{{ Str::limit($txt->texto, 50) }}</td>
                     <td>{{ $txt->created_at->format('d-m-Y') }}</td>
                     <td>
-                        <a href="{{ route('texto.edit', ['id' => $txt->id]) }}" class="btn btn-warning btn-sm">Editar</a>
+                        <a href="#" class="btn btn-warning btn-sm">Editar</a>
 
-                        <form action="{{ route('texto.destroy', ['id' => $txt->id]) }}" method="POST" style="display:inline;">
+                        <form action="#" method="POST" style="display:inline;">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('¿Estás seguro de que deseas eliminar esta categoría?')">Eliminar</button>

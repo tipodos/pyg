@@ -61,7 +61,11 @@
         <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/carousel-1.jpg" style="object-fit: cover;">
+                    @foreach ($imagenes as $imagen)
+                        @if ($imagen->categoria && $imagen->categoria->nombre=='carrucel1')
+                            <img class="position-absolute w-100 h-100" src="{{ asset('img/'.$imagen->img) }}" style="object-fit: cover;">
+                        @endif
+                    @endforeach
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">P&G</h4>
@@ -71,7 +75,11 @@
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/carousel-2.jpg" style="object-fit: cover;">
+                    @foreach ($imagenes as $imagen)
+                        @if ($imagen->categoria && $imagen->categoria->nombre=='carrucel2')
+                            <img class="position-absolute w-100 h-100" src="{{ asset('img/'.$imagen->img) }}" style="object-fit: cover;">
+                        @endif
+                    @endforeach
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">P&G</h4>
@@ -101,14 +109,21 @@
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-5">
-
-                    <img class="img-fluid mb-4 mb-lg-0" src="{{asset('img/imagen1.jpg')}}" alt="">
+                    @foreach ($imagenes as $imagen)
+                        @if ($imagen->categoria && $imagen->categoria->nombre == 'nosotros')
+                            <img class="img-fluid mb-4 mb-lg-0" src="{{ asset('img/'.$imagen->img) }}" alt="">
+                        @endif
+                    @endforeach
                 </div>
                 <div class="col-lg-7">
                     <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Nosotros</h6>
                     <h1 class="display-4 mb-3"><span class="text-primary">Más de 25 años de experiencia</span> en la instalación de gas a nivel industrial</h1>
-                    <p>Durante más de dos décadas, hemos brindado soluciones de instalación de sistemas de gas industrial, garantizando seguridad, eficiencia y cumplimiento con los más altos estándares de la industria. Nos especializamos en proyectos a gran escala, abarcando desde plantas de producción hasta complejos industriales, asegurando que cada instalación sea ejecutada con precisión y profesionalismo. Nuestro equipo de expertos está comprometido con la innovación y la satisfacción del cliente, siempre utilizando tecnologías de vanguardia y prácticas seguras.</p>
-                    <a class="btn btn-primary font-weight-bold py-3 px-5 mt-2" type="button" data-toggle="modal" data-target="#exampleModalLong">Leer Mas</a>
+                    @foreach ($texto as $txt)
+                    @if ($txt->campo == 'nosotros')                    
+                        <p>{{$txt->texto}}</p>
+                    @endif
+                @endforeach
+                    <a class="btn btn-primary font-weight-bold py-3 px-5 mt-2" type="button" data-toggle="modal" data-target="#exampleModalLong" data-categoria="nosotros">Leer Mas</a>
                 </div>
             </div>
         </div>
@@ -127,8 +142,12 @@
                 <div class="col-lg-3 mb-3">
                     <div class="product-item mb-2">
                         <div class="product-img">
-                            <img class="img-fluid" src="{{asset('img/imagen2.jpeg')}}" alt="">
-                            <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                            @foreach ($imagenes as $imagen)
+                                @if ($imagen->categoria && $imagen->categoria->nombre=='ofrecemos1')
+                                    <img class="img-fluid" src="{{'img/'.$imagen->img}}" alt="">
+                                @endif     
+                            @endforeach
+                            <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong" data-categoria="ofrecemos1">
                                 <i class="fa fa-2x fa-plus text-white"></i>
                             </a>
                         </div>
@@ -140,8 +159,12 @@
                 <div class="col-lg-3 mb-3">
                     <div class="product-item mb-2">
                         <div class="product-img">
-                            <img class="img-fluid" src="{{asset('img/imagen2.jpeg')}}" alt="">
-                            <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                            @foreach ($imagenes as $imagen)
+                                @if ($imagen->categoria && $imagen->categoria->nombre=='ofrecemos2')
+                                    <img class="img-fluid" src="{{'img/'.$imagen->img}}" alt="">
+                                @endif     
+                            @endforeach
+                            <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong" data-categoria="ofrecemos2">
                                 <i class="fa fa-2x fa-plus text-white"></i>
                             </a>
                         </div>
@@ -153,8 +176,12 @@
                 <div class="col-lg-3 mb-3">
                     <div class="product-item mb-2">
                         <div class="product-img">
-                            <img class="img-fluid" src="{{asset('img/imagen2.jpeg')}}" alt="">
-                            <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                            @foreach ($imagenes as $imagen)
+                                @if ($imagen->categoria && $imagen->categoria->nombre=='ofrecemos3')
+                                    <img class="img-fluid" src="{{'img/'.$imagen->img}}" alt="">
+                                @endif     
+                            @endforeach
+                            <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong" data-categoria="ofrecemos3">
                                 <i class="fa fa-2x fa-plus text-white"></i>
                             </a>
                         </div>
@@ -166,8 +193,12 @@
                 <div class="col-lg-3 mb-3">
                     <div class="product-item mb-2">
                         <div class="product-img">
-                            <img class="img-fluid" src="{{asset('img/imagen2.jpeg')}}" alt="">
-                            <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                            @foreach ($imagenes as $imagen)
+                                @if ($imagen->categoria && $imagen->categoria->nombre=='ofrecemos4')
+                                    <img class="img-fluid" src="{{'img/'.$imagen->img}}" alt="">
+                                @endif     
+                            @endforeach
+                            <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong" data-categoria="ofrecemos4">
                                 <i class="fa fa-2x fa-plus text-white"></i>
                             </a>
                         </div>
@@ -189,42 +220,18 @@
             <h1 class="font-secondary display-4 text-white">Galeria de fotos de proyectos</h1>
         </div>
         <div class="owl-carousel gallery-carousel">
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="{{asset('img/gallery-1.jpg')}}" alt="">
-                <a class="btn btn-primary" href="{{asset('img/gallery-1.jpg')}}" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="{{asset('img/gallery-2.jpg')}}" alt="">
-                <a class="btn btn-primary" href="{{asset('img/gallery-2.jpg')}}" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="{{asset('img/gallery-3.jpg')}}" alt="">
-                <a class="btn btn-primary" href="{{asset('img/gallery-3.jpg')}}" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="{{asset('img/gallery-4.jpg')}}" alt="">
-                <a class="btn btn-primary" href="{{asset('img/gallery-4.jpg')}}" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="{{asset('img/gallery-5.jpg')}}" alt="">
-                <a class="btn btn-primary" href="{{asset('img/gallery-5.jpg')}}" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="{{asset('img/gallery-6.jpg')}}" alt="">
-                <a class="btn btn-primary" href="{{asset('img/gallery-6.jpg')}}" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
+            @foreach ($imagenes as $imagen)
+
+                @if ($imagen->categoria && $imagen->categoria->nombre == 'galeria')
+                <div class="gallery-item">
+                    <img class="img-fluid w-100" src="{{asset('img/'.$imagen->img)}}" alt="">
+                    <a class="btn btn-primary" href="{{asset('img/'.$imagen->img)}}" data-lightbox="gallery">
+                        <i class="fa fa-2x fa-plus text-white"></i>
+                    </a>
+                </div>
+                @endif
+                
+            @endforeach
         </div>
     </div>
     <!-- Termina galeria -->
@@ -504,24 +511,18 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-        aria-hidden="true">
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Instalaciones de gas domestico</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle">Título por defecto</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <img class="img-fluid mb-4" src="img/carousel-1.jpg" alt="">
-                    <p>- Utilizamos nuevas tendencias en instalaciones de redes, a través de nuestro departamento de ingeniería brindamos asesoría integral, diseñamos, instalamos y asesoramos en la ejecución de proyectos en residencias, viviendas, condominios, edificaciones, departamentos, penthouse, casas de playa, casa de campo.</p>
-                    <p>- Instalaciones limpias y seguras, energía para cocción, calefacción y agua caliente sanitaria y sus conexiones a los aparatos a gas, cocinas, encimeras, termas, termotanques, calentadores de paso, termas y calentadores de gran volumen, secadoras, calefacción modular, calderas de condensación, climatización, calentadores de piscina.</p>
-                    <p>Sit eos diam rebum amet stet sit lorem invidunt, kasd dolor ea dolores ut nonumy, sea est rebum dolore dolor. Lorem tempor tempor gubergren dolor dolor dolor. Kasd amet labore voluptua justo diam, dolore accusam duo est stet nonumy tempor dolores sadipscing duo. Stet at et nonumy erat et sed.</p>
-                    <p>Sit eos diam rebum amet stet sit lorem invidunt, kasd dolor ea dolores ut nonumy, sea est rebum dolore dolor. Lorem tempor tempor gubergren dolor dolor dolor. Kasd amet labore voluptua justo diam, dolore accusam duo est stet nonumy tempor dolores sadipscing duo. Stet at et nonumy erat et sed.</p>
-                    <p>Sit eos diam rebum amet stet sit lorem invidunt, kasd dolor ea dolores ut nonumy, sea est rebum dolore dolor. Lorem tempor tempor gubergren dolor dolor dolor. Kasd amet labore voluptua justo diam, dolore accusam duo est stet nonumy tempor dolores sadipscing duo. Stet at et nonumy erat et sed.</p>
-                    <p>Sit eos diam rebum amet stet sit lorem invidunt, kasd dolor ea dolores ut nonumy, sea est rebum dolore dolor. Lorem tempor tempor gubergren dolor dolor dolor. Kasd amet labore voluptua justo diam, dolore accusam duo est stet nonumy tempor dolores sadipscing duo. Stet at et nonumy erat et sed.</p>
+                    <img id="modalImagen" class="img-fluid mb-4" src="default-image.jpg" alt="Imagen de la categoría">
+                    <p>Texto por defecto</p>
                 </div>
             </div>
         </div>
@@ -544,6 +545,41 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+    
+    <script>
+        let categoriaSeleccionada; // Variable global para almacenar la categoría
+
+$('#exampleModalLong').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget); // Botón que abrió el modal
+    categoriaSeleccionada = button.data('categoria'); // Captura la categoría del botón
+
+    // Convierte la colección de textos e imágenes de Laravel a JSON
+    var textos = @json($texto);
+    var imagenes = @json($imagenes);
+
+    // Encuentra el texto y la imagen correspondiente a la categoría seleccionada
+    var contenidoTexto = textos.find(texto => texto.campo === categoriaSeleccionada);
+    var contenidoImagen = imagenes.find(imagen => imagen.categoria && imagen.categoria.nombre === categoriaSeleccionada);
+
+    // Actualiza el título, texto e imagen en el modal según la categoría seleccionada
+    if (contenidoTexto) {
+        $('#modalTitulo').text(contenidoTexto.titulo); // Actualiza el título del modal
+        $('#modalContenidoTexto').text(contenidoTexto.texto); // Actualiza el texto en el modal
+    } else {
+        $('#modalTitulo').text("Título no disponible");
+        $('#modalContenidoTexto').text("Contenido no encontrado para esta categoría.");
+    }
+
+    if (contenidoTexto && contenidoImagen) {
+        // Cambia el contenido del modal con el texto e imagen seleccionados
+        $('#exampleModalLong .modal-title').text(contenidoTexto.titulo);
+        $('#exampleModalLong .modal-body img').attr('src', 'img/'+contenidoImagen.img);
+        $('#exampleModalLong .modal-body p').text(contenidoTexto.texto);
+    } else {
+        console.log("No se encontró contenido para la categoría seleccionada:", categoriaSeleccionada);
+    }
+});
+    </script>
 
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>

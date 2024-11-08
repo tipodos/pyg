@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\texto;
 use Illuminate\Http\Request;
 
 class textoController extends Controller
@@ -11,7 +12,9 @@ class textoController extends Controller
      */
     public function index()
     {
-        return view('texto/index');
+        $texto=texto::all();
+
+        return view('texto/index',compact('texto'));
     }
 
     /**
@@ -27,7 +30,15 @@ class textoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $texto = new texto();
+
+        $texto->campo=$request->campo;
+        $texto->titulo=$request->titulo;
+        $texto->texto=$request->texto;
+
+        $texto->save();
+
+        return redirect()->back();
     }
 
     /**
@@ -43,7 +54,10 @@ class textoController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $texto= texto::find($id);
+        $textos=texto::all();
+        
+        return view('texto/edit',compact('texto','textos'));
     }
 
     /**
@@ -51,7 +65,14 @@ class textoController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $texto=texto::find($id);
+        $texto->campo=$request->campo;
+        $texto->titulo=$request->titulo;
+        $texto->texto=$request->texto;
+
+        $texto->save();
+
+        return redirect()->route('texto.index');
     }
 
     /**
@@ -59,6 +80,10 @@ class textoController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $texto=texto::find($id);
+
+        $texto->delete();
+
+        return redirect()->back();
     }
 }

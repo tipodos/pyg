@@ -10,7 +10,7 @@ class categoria_img extends Model
     use HasFactory;
     public function imagenes()
 {
-    return $this->hasMany(Imagen::class);
+    return $this->hasMany(image::class);
 }
 
 }

@@ -12,7 +12,7 @@ class image extends Model
     
     public function categoria()
 {
-    return $this->belongsTo(CategoriaImg::class, 'categoria_id');  // Relación con el modelo CategoriaImg
+    return $this->belongsTo(Categoria_img::class, 'categoria_id');  // Relación con el modelo CategoriaImg
 }
 
 };
