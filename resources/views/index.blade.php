@@ -62,7 +62,20 @@
             <div class="carousel-inner">
                 <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
                     @foreach ($imagenes as $imagen)
-                        @if ($imagen->categoria && $imagen->categoria->nombre=='carrucel1')
+                        @if ($imagen->categoria && $imagen->categoria->nombre=='inicio1')
+                            <img class="position-absolute w-100 h-100" src="{{ asset('img/'.$imagen->img) }}" style="object-fit: cover;">
+                        @endif
+                    @endforeach
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">P&G</h4>
+                            <h3 class="display-2 font-secondary text-white mb-4">Servicio de montajes e instalaciones de gas a nivel doméstico e industrial</h3>
+                            <a class="btn btn-light font-weight-bold py-3 px-5 mt-2 btn-scroll" href="#contact">Evianos tus consultas</a>
+                        </div>
+                    </div>
+                </div><div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    @foreach ($imagenes as $imagen)
+                        @if ($imagen->categoria && $imagen->categoria->nombre=='inicio2')
                             <img class="position-absolute w-100 h-100" src="{{ asset('img/'.$imagen->img) }}" style="object-fit: cover;">
                         @endif
                     @endforeach
@@ -76,7 +89,7 @@
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
                     @foreach ($imagenes as $imagen)
-                        @if ($imagen->categoria && $imagen->categoria->nombre=='carrucel2')
+                        @if ($imagen->categoria && $imagen->categoria->nombre=='inicio3')
                             <img class="position-absolute w-100 h-100" src="{{ asset('img/'.$imagen->img) }}" style="object-fit: cover;">
                         @endif
                     @endforeach
@@ -144,7 +157,7 @@
                         <div class="product-img">
                             @foreach ($imagenes as $imagen)
                                 @if ($imagen->categoria && $imagen->categoria->nombre=='ofrecemos1')
-                                    <img class="img-fluid" src="{{'img/'.$imagen->img}}" alt="">
+                                    <img class="img-fluid" src="{{'img/'.$imagen->img}}" alt="" style="width: 300px; height:300px">
                                 @endif     
                             @endforeach
                             <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong" data-categoria="ofrecemos1">
@@ -161,7 +174,7 @@
                         <div class="product-img">
                             @foreach ($imagenes as $imagen)
                                 @if ($imagen->categoria && $imagen->categoria->nombre=='ofrecemos2')
-                                    <img class="img-fluid" src="{{'img/'.$imagen->img}}" alt="">
+                                    <img class="img-fluid" src="{{'img/'.$imagen->img}}" alt="" style="width: 300px; height:300px">
                                 @endif     
                             @endforeach
                             <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong" data-categoria="ofrecemos2">
@@ -178,7 +191,7 @@
                         <div class="product-img">
                             @foreach ($imagenes as $imagen)
                                 @if ($imagen->categoria && $imagen->categoria->nombre=='ofrecemos3')
-                                    <img class="img-fluid" src="{{'img/'.$imagen->img}}" alt="">
+                                    <img class="img-fluid" src="{{'img/'.$imagen->img}}" alt="" style="width: 300px; height:300px">
                                 @endif     
                             @endforeach
                             <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong" data-categoria="ofrecemos3">
@@ -195,7 +208,7 @@
                         <div class="product-img">
                             @foreach ($imagenes as $imagen)
                                 @if ($imagen->categoria && $imagen->categoria->nombre=='ofrecemos4')
-                                    <img class="img-fluid" src="{{'img/'.$imagen->img}}" alt="">
+                                    <img class="img-fluid" src="{{'img/'.$imagen->img}}" alt="" style="width: 300px; height:300px">
                                 @endif     
                             @endforeach
                             <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong" data-categoria="ofrecemos4">
@@ -521,7 +534,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <img id="modalImagen" class="img-fluid mb-4" src="default-image.jpg" alt="Imagen de la categoría">
+                    <img id="modalImagen" class="img-fluid mb-4" src="default-image.jpg" alt="Imagen de la categoría" style="width: 700px; height:500px">
                     <p>Texto por defecto</p>
                 </div>
             </div>

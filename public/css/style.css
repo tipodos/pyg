@@ -9612,7 +9612,16 @@ h4, h5, h6 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/gallery.jpg), no-repeat center center;
   background-size: cover;
 }
-
+.gallery-carousel .owl-nav {
+  position: absolute;
+  top: 50%; 
+  width: 100%; /* Ocupar todo el ancho del carrusel */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Mover botones a los extremos */
+  transform: translateY(-50%);
+  z-index: 1;
+}
 .gallery-carousel .owl-nav,
 .testimonial-carousel .owl-nav {
   position: absolute;
